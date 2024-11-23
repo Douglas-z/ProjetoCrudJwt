@@ -1,0 +1,16 @@
+spring:
+  name: "CRUD c/ SpringBoot & Docker"
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/projetocrud
+    password: senac
+    username: postgres
+    driverClassName: org.postgresql.Driver
+  security:
+    token:
+      secret: cruddocker
+      expiration_time: 120
